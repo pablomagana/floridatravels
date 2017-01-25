@@ -1,7 +1,4 @@
 /**
- * Holiday Template
- * http://www.templatemo.com/tm-475-holiday
- *
  * COLOR CODES
  * Yellow	#004d7a
  *
@@ -37,10 +34,7 @@ body { overflow-x: hidden; }
 	font-weight: 600;
 	text-transform: uppercase;
 }
-.tm-site-name:hover,
-.tm-site-name:focus {
-	color: #ffffff;
-}
+
 .mobile-menu-icon { display: none; }
 .tm-nav {
 	display: block;
@@ -387,17 +381,18 @@ hr { border-top: 1px solid #111010; }
 	width: 50%;
 }
 .tm-tours-box-1-info-left {
-	border-right: 1px solid #B1B1B1;
 	padding-right: 30px;
 }
-.tm-tours-box-1-info-right { padding-left: 30px; }
+.tm-tours-box-1-info-right {
+	border-left: 1px solid #B1B1B1;
+	padding-left: 30px; }
 .margin-bottom-20 { margin-bottom: 20px; }
 .margin-bottom-30 { margin-bottom: 30px; }
 .gray-text { color: #B1B1B1; }
 .tours-1-description { line-height: 1.8; }
 .tm-tours-box-1-link { overflow: hidden }
 .tm-tours-box-1-link-left {
-	background-color: #1CA7C8;
+	background-color: #ceedff;
 	padding: 20px 30px;
 	float: left;
 	width: 75%;
@@ -405,7 +400,7 @@ hr { border-top: 1px solid #111010; }
 }
 .tm-tours-box-1-link-right {
 	float: left;
-	background-color: #1687A6;
+	background-color: #8bbcff;
 	font-weight: 600;
 	font-size: 18px;
 	display: block;
@@ -581,11 +576,13 @@ hr { border-top: 1px solid #111010; }
 .flexslider.flexslider-about img {
 	max-width: 528px;
 }
+/*titulo apartado conocenos*/
 .slider-title {
 	font-style: italic;
 	font-weight: 600;
 	margin-bottom: 25px;
 	text-transform: uppercase;
+	color: #22497f;
 }
 .slider-subtitle {
 	font-size: 18px;
@@ -607,7 +604,7 @@ hr { border-top: 1px solid #111010; }
 }
 .contact-image {
 	float: left;
-	widthh: 100%;
+	width: 100%;
 	max-width: 494px;
 }
 .contact-text {
@@ -625,9 +622,7 @@ hr { border-top: 1px solid #111010; }
 	width: 100%;
 }
 .tm-submit-btn {
-	background: #f5d11d; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
-	background: linear-gradient(to bottom,  #f5d11d 0%,#f3d10e 1%,#efcf1c 2%,#fccd0d 4%,#f7ca0d 5%,#f9cb1e 6%,#f7cb10 7%,#f8cc14 8%,#f0c40c 54%,#edc50c 55%,#e9c108 71%,#ecc008 78%,#e6be06 91%,#e9bd06 93%,#e8bc06 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5d11d', endColorstr='#e8bc06',GradientType=0 ); /* IE6-9 */
+	background: #8bbcff;
 	width: 100%;
 	border: none;
 	height: 40px;
@@ -636,7 +631,7 @@ hr { border-top: 1px solid #111010; }
 	font-size: 12px;
 	font-weight: 600;
 }
-.tm-submit-btn:hover { background: #f5d11d; }
+.tm-submit-btn:hover { color:white;background: #004d7a; }
 .contact-social { margin-top: 20px; }
 .contact-social .fa { color: white; }
 .tm-social-facebook { background-color: #4A7DBB; }
@@ -897,4 +892,23 @@ hr { border-top: 1px solid #111010; }
 
 @media screen and (max-width: 400px) {
 	.tm-section-title {	font-size: 28px; }
+}
+.loc{
+	margin-top:6px;
+	margin-bottom: 6px;
+}
+.loc span{margin-right: 4px;}
+.center{
+	text-align: center;
+}
+.sub_menu{
+	background-color:white;
+	position:absolute;
+	z-index:5;
+	width:150%;
+	display: none;
+}
+/*hace visible el sub menu hijo directo del elemento de destinos*/
+#destinos:hover > div{
+	display: inline-block;
 }
